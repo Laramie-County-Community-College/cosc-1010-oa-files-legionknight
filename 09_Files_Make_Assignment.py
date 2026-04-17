@@ -22,13 +22,14 @@ Run the program multiple times and enter different entries. Then, open the
 # --- YOUR CODE GOES BELOW ---
 
 # 1. Ask the user for a journal entry
-
+entry = str(input("Please write what you want to add to the journal\n--->   "))
 # 2. Open journal.txt in append mode
-
+file = open("journal.txt","a")
 # 3. Write the entry to the file (don't forget the newline character!)
-
+file.write(entry)
+file.write("\n")
 # 5. Close the file
-
+file.close()
 # 6. Print a confirmation message
-
+print("Your entry has been added!")
 # --- END YOUR CODE ---

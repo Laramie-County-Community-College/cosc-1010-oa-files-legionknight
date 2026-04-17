@@ -15,7 +15,7 @@ new_score = input("Enter a new high score: ")
 
 # --- MODIFY THE LINE BELOW ---
 # The mode here is incorrect for what we want to do.
-file = open("high_scores.txt", "w")
+file = open("high_scores.txt", "a")
 # --- END MODIFICATION ---
 
 file.write(new_score + "\n")
